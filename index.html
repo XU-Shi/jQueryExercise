@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Jane Shopping</title>
+    <script src="lib/jquery-3.6.4.js"></script>
+    <script src="lib/jquery.validate.js"></script>
+
+</head>
+<body>
+<!--头部开始-->
+<div id="header">
+    <!--<div> 标签可以把文档分割为独立的、不同的部分。<div> 是一个块级元素。这意味着它的内容自动地开始一个新行。实际上，换行是 <div> 固有的唯一格式表现。可以通过 <div> 的 class 或 id 应用额外的样式。-->
+    <a id="logo" href="#">Jane Shopping</a>
+    <!--<a> 标签定义超链接，用于从一张页面链接到另一张页面。href="#"是一种临时链接的写法，这样写就是说这个链接目前不可用，点击了也不会有作用，还是会跳转到本页，当#被有效链接替换才会起作用 -->
+    <ul id="skin">  <!--<ul> 标签定义无序列表。-->
+        <li id="skin_0" title="蓝色" class="selected">蓝色</li>
+        <li id="skin_1" title="紫色" class="selected">紫色</li>
+        <li id="skin_2" title="红色" class="selected">红色</li>
+        <li id="skin_3" title="天蓝色" class="selected">天蓝色</li>
+        <li id="skin_4" title="橙色" class="selected">橙色</li>
+        <li id="skin_5" title="淡绿色" class="selected">淡绿色</li>
+    </ul>
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div id="navigation">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">衬衫</a>
+            <ul>
+                <li><a href="#">短袖衬衫</a></li>
+                <li><a href="#">长袖衬衫</a></li>
+            </ul>
+        </li>
+        <li><a href="#">卫衣</a>
+            <ul>
+                <li><a href="#">开襟卫衣</a></li>
+                <li><a href="#">套头卫衣</a></li>
+            </ul>
+        </li>
+        <li><a href="#">裤子</a>
+            <ul>
+                <li><a href="#">休闲裤</a></li>
+                <li><a href="#">免烫卡其裤</a></li>
+                <li><a href="#">牛仔裤</a></li>
+                <li><a href="#">短裤</a></li>
+            </ul>
+        </li>
+        <li><a href="#">首页</a></li>
+    </ul>
+
+</div>
+<!--导航结束-->
+<!--主体开始-->
+<div id="content">
+    <div class="content_left">  <!--class是设置标签的类，class属性(.css中定义的)用于指定元素属于何种样式的类。-->
+        <div class="global_module news">
+            <h3>最新动态</h3>   <!--<h1> - <h6> 标签可定义标题。<h1> 定义最大的标题。<h6> 定义最小的标题。-->
+            <div class="scrollNews">   <!--滚动新闻-->
+                <ul>
+                    <li><a href="#" class="tooltip" title="甜美宽松毛衣今秋一定红.">甜美宽松毛衣今秋一定红.</a></li>
+                    <li><a href="#" class="tooltip" title="秋装百搭小马甲不到50元.">秋装百搭小马甲不到50元.</a></li>
+                    <li><a href="#" class="tooltip" title="修身韩版小西装万人疯抢.">修身韩版小西装万人疯抢.</a></li>
+                    <li><a href="#" class="tooltip" title="夏末雪纺店主含泪大甩卖.">夏末雪纺店主含泪大甩卖.</a></li>
+                    <li><a href="#" class="tooltip" title="瑞丽都疯狂推荐的秋装.">瑞丽都疯狂推荐的秋装.</a></li>
+                    <li><a href="#" class="tooltip" title="48元长款针织小开衫卖疯啦.">48元长款针织小开衫卖疯啦.</a></li>
+                    <li><a href="#" class="tooltip" title="长袖雪纺衫单穿内搭都超美.">长袖雪纺衫单穿内搭都超美.</a></li>
+                </ul>
+            </div>
+            <p class="module_up_down"><img src="images/down.gif" alt=""/></p>  <!--<p> 标签定义段落。-->
+        </div>
+        <div class="global_module procatalog">
+            <h3>产品分类</h3>
+            <ul class="m-treeview">
+                <li class="m-expanded">
+                    <span>衬衫</span> <!--<span> 标签被用来组合文档中的行内元素。-->
+                    <ul>
+                        <li><span>短袖衬衫</span></li>
+                        <li><span>长袖衬衫</span></li>
+                    </ul>
+                </li>
+                <li class="m-expanded">
+                    <span>卫衣</span>
+                    <ul>
+                        <li><span>开襟卫衣</span></li>
+                        <li><span>套头卫衣</span></li>
+                    </ul>
+                </li>
+                <li class="m-expanded">
+                    <span>裤子</span>
+                    <ul>
+                        <li><span>休闲裤</span></li>
+                        <li><span>免烫卡其裤</span></li>
+                        <li><span>牛仔裤</span></li>
+                        <li><span>短裤</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="module_up_down"><img src="images/down.gif" alt=""/></p>
+        </div>
+    </div>
+    <div class="content_right">
+        <div class="ad">
+            <ul class="slider">
+                <li><img src="images/ads/1.gif" alt=""/></li>
+                <li><img src="images/ads/2.gif" alt=""/></li>
+                <li><img src="images/ads/3.gif" alt=""/></li>
+                <li><img src="images/ads/4.gif" alt=""/></li>
+                <li><img src="images/ads/5.gif" alt=""/></li>
+            </ul>
+            <ul class="num">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <div class="global_module prolist">
+            <h3>新款上市</h3>
+            <div class="prolist_content">
+                <ul>
+                    <li>
+                        <a href="detail.html"><img src="images/img_1.jpg" alt=""/></a><span>免烫高支棉衬衣1</span><span>$120.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_2.jpg" alt=""/></a><span>免烫斜纹衬衣</span><span>$129.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_3.jpg"
+                                                   alt=""/></a><span>棉小方格正装衬衣</span><span>$129.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_4.jpg"
+                                                   alt=""/></a><span>小米兰格衬衣蓝色</span><span>$129.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_1.jpg" alt=""/></a><span>免烫高支棉衬衣2</span><span>$120.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_2.jpg" alt=""/></a><span>免烫斜纹衬衣</span><span>$129.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_3.jpg"
+                                                   alt=""/></a><span>棉小方格正装衬衣</span><span>$129.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_4.jpg"
+                                                   alt=""/></a><span>小米兰格衬衣蓝色</span><span>$129.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_1.jpg" alt=""/></a><span>免烫高支棉衬衣3</span><span>$120.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_2.jpg" alt=""/></a><span>免烫斜纹衬衣</span><span>$129.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_3.jpg"
+                                                   alt=""/></a><span>棉小方格正装衬衣</span><span>$129.00</span>
+                    </li>
+                    <li>
+                        <a href="detail.html"><img src="images/img_4.jpg"
+                                                   alt=""/></a><span>小米兰格衬衣蓝色</span><span>$129.00</span>
+                    </li>
+                </ul>
+            </div>
+            <p class="module_left_right"><img class="goLeft" src="images/left.gif" alt=""/><img class="goRight"
+                                                                                                src="images/right.gif"
+                                                                                                alt=""/></p>
+        </div>
+    </div>
+</div>
+<!--主体结束-->
+</body>
+</html>
