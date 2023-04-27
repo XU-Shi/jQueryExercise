@@ -1,1 +1,10 @@
-* {margin: 0; padding:0}
+/* word-wrap 属性: normal 只在允许的断字点换行（浏览器保持默认处理）; break-word 在长单词或 URL 地址内部进行换行 */
+/* word-break 属性: normal 使用浏览器默认的换行规则; break-all 允许在单词内换行; keep-all	只能在半角空格或连字符处换行 */
+* { margin: 0; padding:0; word-wrap: break-word; word-break: break-all; }
+/* 12px/1.6em 字体大小/行高 px:像素; pt:印刷单位; em:相对单位; rem:相对根元素html. pt=px*3/4; em=n*16px */
+body { background: #FFF; color: #333; font: 12px/1.6em Helvetica, Arial, sans-serif;}
+a { color: #0287CA; text-decoration: none;}
+a:hover { text-decoration: underline;}
+ul, li { list-style: none;}
+img { border:none;}
+h1, h2, h3, h4, h5, h6 {font-size: 1em;}
